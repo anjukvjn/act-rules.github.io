@@ -5,6 +5,11 @@ rule_type: atomic
 description: |
   This rule checks that visual labels describe the purpose of form field elements.
 accessibility_requirements:
+  wcag21:2.4.6: # Headings and labels (AA)
+    forConformance: true
+    failed: not satisfied
+    passed: further testing needed
+    inapplicable: further testing needed
 input_aspects:
   - DOM Tree
   - CSS Styling
